@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+
+time_points = [0, 1, 2, 3, 4]
+growth_rates_microgravity = [0, 10, 15, 18, 20]
+growth_rates_earth = [0, 8, 12, 14, 16]
+
+
+plt.plot(time_points, growth_rates_microgravity, label='Microgravity')
+plt.plot(time_points, growth_rates_earth, label='Earth Control')
+
+plt.xlabel('Time (hours)')
+plt.ylabel('Growth Rate')
+plt.title('Microbial Growth Rates in Microgravity and Earth Conditions')
+plt.legend()
+
+
+plt.show()

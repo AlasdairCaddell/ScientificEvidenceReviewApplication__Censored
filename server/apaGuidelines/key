@@ -1,0 +1,36 @@
+Developer cheatsheet
+Subject
+, 
+Section
+; 
+Point 
+: 
+
+Subpoint 
+-
+Reference in Subpoint 
+>
+
+
+regex
+.       Matches any character except newline
+\w      Matches any alphanumeric character and underscore
+\W      Matches any non-alphanumeric character and non-underscore
+\d      Matches any digit character
+\D      Matches any non-digit character
+\s      Matches any whitespace character (space, tab, newline, etc.)
+\S      Matches any non-whitespace character
+\b      Matches the boundary between a word character and a non-word character
+\B      Matches the boundary between two word characters or two non-word characters
+^       Matches the beginning of a string
+$       Matches the end of a string
+[]      Matches any character inside the brackets
+[^]     Matches any character not inside the brackets
+|       Matches either the expression before or after the pipe
+()      Groups expressions together
+*       Matches zero or more occurrences of the preceding expression
++       Matches one or more occurrences of the preceding expression
+?       Matches zero or one occurrences of the preceding expression
+{n}     Matches exactly n occurrences of the preceding expression
+{n,}    Matches n or more occurrences of the preceding expression
+{n,m}   Matches at least n and at most m occurrences of the preceding expression

@@ -1,0 +1,104 @@
+Title Page
+; Title
+: Identify key issues/topic under consideration.
+; Author Note
+: Acknowledge funding sources or contributors.
+: Acknowledge conflicts of interest~.
+, Abstract
+; Abstract
+: State the problem/question/objectives under investigation.
+: Indicate the study design, including types of participants or data sources, analytic strategy, main results/findings, and main implications/significance.
+: Keywords~.
+, Introduction
+; Description of Research Problem or Question
+: Frame the problem or question and its context.
+: Review, critique, and synthesize the applicable literature to identify key issues/debates/theoretical frameworks in the relevant literature to clarify barriers, knowledge gaps, or practical needs.
+; Study Objectives/Aims/Research Goals
+: State the purpose, goal, and/or aim of the study.
+: State the target audience~.
+: Provide the rationale for fit of design used to investigate this purpose/goal.
+: Describe the approach to inquiry, if it illuminates the objectives and research rationale.
+, Method
+; Research Design Overview
+: Summarize the research design, including data-collection strategies, data-analytic strategies, and, if illuminating, approaches to inquiry.
+: Provide the rationale for the design selected.
+; Study Participants or Data Sources
+. Researcher Description
+: Describe the researchers` backgrounds in approaching the study, emphasizing their prior understandings of the phenomena under study.
+: Describe how prior understandings of the phenomena under study were managed and/or influenced the research.
+. Participants or Other Data Sources
+: Provide the numbers of participants/documents/events analyzed.
+: Describe the demographics/cultural information, perspectives of participants, or characteristics of data sources that might influence the data collected.
+: Describe existing data sources.
+: Provide data repository information for openly shared data~.
+: Describe archival searches or process of locating data for analyses~.
+. Researcher-Participant Relationship
+: Describe the relationships and interactions between researchers and participants relevant to the research process and any impact on the research process.
+; Participant Recruitment
+. Recruitment Process
+: Describe the recruitment process and any recruitment protocols.
+: Describe any incentives or compensation, and provide assurance of relevant ethical processes of data collection and consent process as relevant.
+: Describe the process by which the number of participants was determined in relation to the study design.
+: Provide any changes in numbers through attrition and final number of participants/sources.
+: Describe the rationale for decision to halt data collection.
+: Convey the study purpose as portrayed to participants, if different from the purpose stated.
+. Participant Selection
+: Describe the participants/data source selection process and inclusion/exclusion criteria.
+: Provide the general context for the study.
+: If your participant selection is from an archived data set, describe the recruitment and selection process from that data set as well as any decisions in selecting sets of participants from that data set.
+; Data Collection
+. Data Collection/Identification Procedures
+: State the form of data collected.
+: Describe the origins or evolution of the data-collection protocol.
+: Describe any alterations of data-collection strategy in response to the evolving findings or the study rationale.
+: Describe the data-selection or data-collection process.
+: Convey the extensiveness of engagement.
+: For interview and written studies, indicate the mean and range of the time duration in the data-collection process.
+: Describe the management or use of reflexivity in the data-collection process, as it illuminates the study.
+: Describe questions asked in data collection: content of central questions, form of questions.
+: Identify data audio/visual recording methods, field notes, or transcription processes used.
+; Analysis
+. Data-Analytic Strategies
+: Describe the methods and procedures used and for what purpose or goal.
+: Explicate in detail the process of analysis, including some discussion of the procedures following a principle of transparency.
+: Describe coders or analysts and their training~(if not already described in the researcher description section).
+: Identify whether coding categories emerged from the analyses or were developed a priori.
+: Identify units of analysis and how units were formed~.
+: Describe the process of arriving at an analytic scheme~.
+: Provide illustrations and descriptions of the analytic scheme development~.
+: Indicate software~.
+. Methodological Integrity
+: Demonstrate that the claims made from the analysis are warranted and have produced findings with methodological integrity. The procedures that support methodological integrity typically are described across the relevant sections of a paper, but they could be addressed in a separate section when elaboration or emphasis would be helpful. Issues of methodological integrity include the following:
+- Assess the adequacy of the data in terms of its ability to capture forms of diversity most relevant to the question, research goals, and inquiry approach.
+- Describe how the researchers` perspectives were managed in both the data collection and analysis.
+- Demonstrate that findings are grounded in the evidence.
+- Demonstrate that the contributions are insightful and meaningful.
+- Provide relevant contextual information for findings.
+- Present findings in a coherent manner that makes sense of contradictions or disconfirming evidence in the data
+: Demonstrate consistency with regard to the analytic processes or describe responses to inconsistencies, as relevant.
+: Describe how support for claims was supplemented by any checks added to the qualitative analysis. Examples of supplemental checks that can strengthen the research may include
+- transcripts/data collected returned to participants for feedback
+- triangulation across multiple sources of information, findings, or investigators
+- checks on the interview thoroughness or interviewer demands
+- consensus or auditing process
+- member checks or participant feedback on findings
+- data displays/matrices
+- in-depth thick description, case examples, or illustrations
+- structured methods of researcher reflexivity
+- checks on the utility of findings in responding to the study problem
+, Findings/Results
+; Findings/Results Subsections
+: Describe research findings and the meaning and understandings that the researcher has derived from the data analysis.
+: Demonstrate the analytic process of reaching findings.
+: Present research findings in a way that is compatible with the study design.
+: Present synthesizing illustrations, if useful in organizing and conveying findings.
+, Discussion
+; Discussion Subsections
+: Describe the central contributions and their significance in advancing disciplinary understandings.
+: Describe the types of contributions made by findings and how findings can be best utilized.
+: Identify similarities and differences from prior theories and research findings.
+: Reflect on any alternative explanations of the findings.
+: Identify the study`s strengths and limitations 
+: Describe the limits of the scope of transferability
+: Revisit any ethical dilemmas or challenges that were encountered, and provide related suggestions for future researchers.
+: Consider the implications for future research, policy, or practice.

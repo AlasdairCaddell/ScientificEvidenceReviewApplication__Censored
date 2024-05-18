@@ -1,0 +1,90 @@
+def test():    
+    import tensorflow as tf
+    from tensorflow.keras.layers import Input, Dense, Flatten, Lambda
+    from tensorflow.keras.models import Model
+    import numpy as np
+
+    # Define the Siamese Network architecture
+    def build_siamese_model(input_shape):
+        input_a = Input(shape=input_shape)
+        input_b = Input(shape=input_shape)
+
+        # Neural network shared weights
+        shared_network = tf.keras.Sequential([
+            Flatten(input_shape=input_shape),
+            Dense(128, activation='relu'),
+            Dense(64, activation='relu'),
+            Dense(32, activation='relu')
+        ])
+
+        # Output embeddings
+        embedding_a = shared_network(input_a)
+        embedding_b = shared_network(input_b)
+
+        # Euclidean distance layer
+        distance = Lambda(lambda x: tf.norm(x[0] - x[1], axis=-1, keepdims=True))([embedding_a, embedding_b])
+
+        model = Model(inputs=[input_a, input_b], outputs=distance)
+        return model
+
+    # Create Siamese model
+    input_shape = (28, 28)  # Example input shape
+    siamese_model = build_siamese_model(input_shape)
+
+    # Compile the model
+    siamese_model.compile(optimizer='adam', loss='mean_squared_error')
+
+    # Generate example data
+    num_samples = 100
+    x1 = np.random.random((num_samples, *input_shape))
+    x2 = np.random.random((num_samples, *input_shape))
+    y = np.random.random((num_samples, 1))
+
+    # Train the model
+    siamese_model.fit([x1, x2], y, epochs=10, batch_size=32)
+
+
+def test1(width,height,channels,batch_size,num_epochs,pair_images_left,pair_images_right,labels):
+
+
+    import tensorflow as tf
+    from tensorflow.keras.layers import Input, Flatten, Dense, Lambda
+    from tensorflow.keras.models import Model
+    from tensorflow.keras import backend as K
+
+    def euclidean_distance(vects):
+        x, y = vects
+        sum_square = K.sum(K.square(x - y), axis=1, keepdims=True)
+        return K.sqrt(K.maximum(sum_square, K.epsilon()))
+
+    def eucl_dist_output_shape(shapes):
+        shape1, shape2 = shapes
+        return (shape1[0], 1)
+
+    input_shape = (width, height, channels) 
+    left_input = Input(input_shape)
+    right_input = Input(input_shape)
+
+    # Define your convolutional layers
+    convnet = tf.keras.Sequential([
+        Conv2D(32, (3, 3), activation='relu', input_shape=input_shape),
+        MaxPooling2D(),
+        Conv2D(64, (3, 3), activation='relu'),
+        MaxPooling2D(),
+        Flatten(),
+        Dense(128, activation='relu')
+    ])
+
+    encoded_l = convnet(left_input)
+    encoded_r = convnet(right_input)
+
+    distance = Lambda(euclidean_distance, output_shape=eucl_dist_output_shape)([encoded_l, encoded_r])
+
+    siamese_net = Model(inputs=[left_input, right_input], outputs=distance)
+
+    # Compile the model
+    optimizer = tf.keras.optimizers.Adam(learning_rate=0.0001)
+    siamese_net.compile(loss="binary_crossentropy", optimizer=optimizer)
+
+    # Train the model
+    siamese_net.fit([pair_images_left, pair_images_right], labels, batch_size=batch_size, epochs=num_epochs)
